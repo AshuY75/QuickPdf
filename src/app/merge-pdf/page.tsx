@@ -52,9 +52,47 @@ export default function MergePdfPage() {
             <h2 className="text-base md:text-lg font-semibold mb-2 text-[#2563EB]">
               Merge PDF documents easily
             </h2>
-            <p>
-              Perfect for students, professionals, and offices who need to
-              combine multiple PDFs into one file without signups.
+
+            <p className="mb-4">
+              Merge PDF files online with QuickPdf in just a few clicks. This
+              free PDF merger allows you to combine multiple PDF documents into
+              a single file without creating an account or installing any
+              software.
+            </p>
+
+            <p className="mb-4">
+              Whether you want to join PDF files for school assignments, office
+              reports, or personal documents, QuickPdf makes the process fast,
+              secure, and easy to use.
+            </p>
+
+            <h3 className="font-semibold text-[#111827] mt-6 mb-2">
+              How to merge PDF files:
+            </h3>
+            <ol className="list-decimal list-inside mb-4 space-y-1">
+              <li>
+                Upload two or more PDF files using the file uploader above.
+              </li>
+              <li>Arrange the files in the order you want.</li>
+              <li>Click the “Merge PDFs” button.</li>
+              <li>Download your merged PDF instantly.</li>
+            </ol>
+
+            <h3 className="font-semibold text-[#111827] mt-6 mb-2">
+              Why use QuickPdf to merge PDFs?
+            </h3>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Merge multiple PDFs into one file for free</li>
+              <li>No signup or login required</li>
+              <li>Works directly in your browser</li>
+              <li>Secure processing – files are not stored permanently</li>
+              <li>Compatible with all devices</li>
+            </ul>
+
+            <p className="mt-4">
+              This online PDF merger is ideal for students, professionals, and
+              businesses who need to combine PDF files quickly without
+              watermarks or restrictions.
             </p>
           </section>
         </div>
