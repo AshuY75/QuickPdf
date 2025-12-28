@@ -30,20 +30,52 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-16">
+      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-12">
         <div className="mx-auto max-w-6xl">
           {/* Hero */}
-          <h1 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4">
-            QuickPdf – Free Online PDF Tools
-          </h1>
+          <section className="mb-14">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4">
+              QuickPdf – Free Online PDF Tools
+            </h1>
 
-          <p className="max-w-2xl text-base md:text-lg text-[#374151] mb-12">
-            QuickPdf helps you merge, compress, and convert PDF files online.
-            Fast, secure, and completely free. No signup required.
-          </p>
+            <p className="max-w-2xl text-base md:text-lg text-[#374151] mb-6">
+              Merge, compress, and convert PDF files in seconds. No signup. No
+              watermarks. Files deleted automatically.
+            </p>
+
+            {/* Trust Strip */}
+            <p className="text-sm text-[#6B7280] mb-6">
+              ✔ Free forever &nbsp;·&nbsp; ✔ No account required &nbsp;·&nbsp; ✔
+              Secure processing &nbsp;·&nbsp; ✔ Works on all devices
+            </p>
+
+            {/* Primary CTA */}
+            <div className="flex items-center gap-4">
+              <Link
+                href="/merge-pdf"
+                className="
+                  inline-flex items-center
+                  px-5 py-2.5 rounded-md
+                  bg-[#2563EB] text-white
+                  font-medium text-sm
+                  hover:bg-[#1D4ED8]
+                  transition-colors
+                "
+              >
+                Get started – Merge PDF
+              </Link>
+
+              <Link
+                href="#tools"
+                className="text-sm font-medium text-[#2563EB] hover:underline"
+              >
+                View all tools
+              </Link>
+            </div>
+          </section>
 
           {/* Tools Grid */}
-          <section>
+          <section id="tools">
             <h2 className="text-xl md:text-2xl font-semibold text-[#111827] mb-6">
               Available PDF Tools
             </h2>
@@ -67,21 +99,29 @@ export default function HomePage() {
                   <h3 className="mb-2 text-lg font-semibold text-[#111827] group-hover:text-[#2563EB]">
                     {tool.title}
                   </h3>
-                  <p className="text-sm text-[#374151]">{tool.description}</p>
+
+                  <p className="text-sm text-[#374151] mb-4">
+                    {tool.description}
+                  </p>
+
+                  <span className="text-sm font-medium text-[#2563EB]">
+                    Use tool →
+                  </span>
                 </Link>
               ))}
             </div>
           </section>
 
           {/* Trust Section */}
-          <section className="mt-16 max-w-3xl">
+          <section className="mt-14 max-w-3xl">
             <h2 className="text-lg font-semibold text-[#111827] mb-3">
               Why use QuickPdf?
             </h2>
+
             <p className="text-sm md:text-base text-[#374151] leading-relaxed">
-              QuickPdf is designed for students, professionals, and businesses
-              who need reliable PDF tools without watermarks, account creation,
-              or software installation. All files are processed securely and
+              QuickPdf is built for students, professionals, and businesses who
+              need reliable PDF tools without watermarks, forced signups, or
+              software installation. All files are processed securely and
               deleted automatically after completion.
             </p>
           </section>
