@@ -44,14 +44,50 @@ export default function ImageToPdfPage() {
             />
           </div>
 
+          {/* Info Section */}
           <section className="mt-12 text-sm md:text-base text-[#374151] leading-relaxed max-w-2xl">
             <h2 className="text-base md:text-lg font-semibold mb-2 text-[#2563EB]">
               Convert images into a single PDF
             </h2>
-            <p>
-              QuickPdf lets you combine multiple images into one PDF file. Ideal
-              for assignments, scanned documents, and online submissions that
-              require PDF format.
+
+            <p className="mb-4">
+              Convert images to PDF online with QuickPdf in just a few clicks.
+              This free image to PDF converter allows you to merge multiple JPG,
+              PNG, and other image formats into one PDF file without creating an
+              account or installing any software.
+            </p>
+
+            <p className="mb-4">
+              Whether you are submitting assignments, sharing scanned documents,
+              or uploading files to online portals, QuickPdf makes image to PDF
+              conversion fast, secure, and easy to use.
+            </p>
+
+            <h3 className="font-semibold text-[#111827] mt-6 mb-2">
+              How to convert images to PDF:
+            </h3>
+            <ol className="list-decimal list-inside mb-4 space-y-1">
+              <li>Upload one or more image files using the uploader above.</li>
+              <li>Arrange the images in the order you want.</li>
+              <li>Click the “Convert to PDF” button.</li>
+              <li>Download your PDF file instantly.</li>
+            </ol>
+
+            <h3 className="font-semibold text-[#111827] mt-6 mb-2">
+              Why use QuickPdf for image to PDF conversion?
+            </h3>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Convert images to PDF for free</li>
+              <li>No signup or login required</li>
+              <li>Works directly in your browser</li>
+              <li>Secure processing – files are not stored permanently</li>
+              <li>Compatible with all devices</li>
+            </ul>
+
+            <p className="mt-4">
+              This online image to PDF converter is ideal for students,
+              professionals, and businesses who need to turn images into PDF
+              files quickly without watermarks or restrictions.
             </p>
           </section>
         </div>

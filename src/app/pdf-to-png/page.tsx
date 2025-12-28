@@ -42,13 +42,50 @@ export default function PdfToPngPage() {
             />
           </div>
 
+          {/* Info Section */}
           <section className="mt-12 text-sm md:text-base text-[#374151] leading-relaxed max-w-2xl">
             <h2 className="text-base md:text-lg font-semibold mb-2 text-[#2563EB]">
               Extract PDF pages as images
             </h2>
-            <p>
-              Use QuickPdf to convert PDF documents into PNG images for
-              previews, presentations, or sharing individual pages.
+
+            <p className="mb-4">
+              Convert PDF to PNG online with QuickPdf in just a few seconds.
+              This free PDF to image converter allows you to extract each page
+              of a PDF file as a high-quality PNG image without creating an
+              account or installing any software.
+            </p>
+
+            <p className="mb-4">
+              Whether you need images for presentations, previews, design work,
+              or sharing individual pages, QuickPdf makes PDF to PNG conversion
+              fast, secure, and easy to use.
+            </p>
+
+            <h3 className="font-semibold text-[#111827] mt-6 mb-2">
+              How to convert PDF to PNG:
+            </h3>
+            <ol className="list-decimal list-inside mb-4 space-y-1">
+              <li>Upload your PDF file using the uploader above.</li>
+              <li>Click the “Convert to PNG” button.</li>
+              <li>Wait while each PDF page is converted into an image.</li>
+              <li>Download all PNG images as a ZIP file.</li>
+            </ol>
+
+            <h3 className="font-semibold text-[#111827] mt-6 mb-2">
+              Why use QuickPdf for PDF to PNG conversion?
+            </h3>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Convert PDF pages to PNG images for free</li>
+              <li>No signup or login required</li>
+              <li>Works directly in your browser</li>
+              <li>Secure processing – files are not stored permanently</li>
+              <li>Compatible with all devices</li>
+            </ul>
+
+            <p className="mt-4">
+              This online PDF to PNG converter is ideal for students,
+              professionals, and businesses who need to turn PDF pages into
+              images quickly without watermarks or restrictions.
             </p>
           </section>
         </div>
