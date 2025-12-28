@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const tools = [
   {
@@ -25,45 +27,68 @@ const tools = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-zinc-50 px-6 py-20 text-zinc-900">
-      <div className="mx-auto max-w-6xl">
-        {/* Hero */}
-        <h1 className="text-4xl font-bold mb-4">
-          QuickPDF – Free Online PDF Tools
-        </h1>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
 
-        <p className="max-w-2xl text-lg text-zinc-600 mb-14">
-          QuickPDF helps you merge, compress, and convert PDF files online.
-          Fast, secure, and completely free. No signup required.
-        </p>
+      <main className="flex-1 px-4 sm:px-6 lg:px-8 py-16">
+        <div className="mx-auto max-w-6xl">
+          {/* Hero */}
+          <h1 className="text-3xl md:text-4xl font-bold text-[#111827] mb-4">
+            QuickPdf – Free Online PDF Tools
+          </h1>
 
-        {/* Tools Grid */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-6">Available PDF Tools</h2>
+          <p className="max-w-2xl text-base md:text-lg text-[#374151] mb-12">
+            QuickPdf helps you merge, compress, and convert PDF files online.
+            Fast, secure, and completely free. No signup required.
+          </p>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {tools.map((tool) => (
-              <Link
-                key={tool.href}
-                href={tool.href}
-                className="group rounded-xl border border-zinc-200 bg-white p-6 shadow-sm transition-all
-                           hover:-translate-y-1 hover:border-blue-500 hover:shadow-md"
-              >
-                <h3 className="mb-2 text-lg font-semibold group-hover:text-blue-600">
-                  {tool.title}
-                </h3>
-                <p className="text-sm text-zinc-600">{tool.description}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
+          {/* Tools Grid */}
+          <section>
+            <h2 className="text-xl md:text-2xl font-semibold text-[#111827] mb-6">
+              Available PDF Tools
+            </h2>
 
-        {/* Footer Text */}
-        <p className="mt-16 max-w-xl text-sm text-zinc-500">
-          Designed for students, professionals, and businesses who need reliable
-          PDF tools without ads or account creation.
-        </p>
-      </div>
-    </main>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {tools.map((tool) => (
+                <Link
+                  key={tool.href}
+                  href={tool.href}
+                  className="
+                    group rounded-xl
+                    border border-[#E5E7EB]
+                    bg-[#F9FAFB]
+                    p-6
+                    transition-all
+                    hover:-translate-y-1
+                    hover:border-[#2563EB]
+                    hover:shadow-md
+                  "
+                >
+                  <h3 className="mb-2 text-lg font-semibold text-[#111827] group-hover:text-[#2563EB]">
+                    {tool.title}
+                  </h3>
+                  <p className="text-sm text-[#374151]">{tool.description}</p>
+                </Link>
+              ))}
+            </div>
+          </section>
+
+          {/* Trust Section */}
+          <section className="mt-16 max-w-3xl">
+            <h2 className="text-lg font-semibold text-[#111827] mb-3">
+              Why use QuickPdf?
+            </h2>
+            <p className="text-sm md:text-base text-[#374151] leading-relaxed">
+              QuickPdf is designed for students, professionals, and businesses
+              who need reliable PDF tools without watermarks, account creation,
+              or software installation. All files are processed securely and
+              deleted automatically after completion.
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
   );
 }
